@@ -43,8 +43,8 @@ export default function Home() {
               className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200"
             >
               Descargar App
-        </a>
-        <a
+            </a>
+            <a
               href="#servicios"
               className="border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200"
             >
@@ -75,11 +75,11 @@ export default function Home() {
               </div>
               <h4 className="text-xl font-semibold text-gray-900 mb-4">Búsqueda Inteligente</h4>
               <p className="text-gray-600">
-                Busca en tiempo real entre leyes y reglamentos de contrataciones públicas. 
+                Busca en tiempo real entre leyes y reglamentos de contrataciones públicas.
                 Encuentra artículos específicos con resaltado de términos clave.
               </p>
             </div>
-            
+
             <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-2xl">
               <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -88,11 +88,11 @@ export default function Home() {
               </div>
               <h4 className="text-xl font-semibold text-gray-900 mb-4">Foro de Expertos</h4>
               <p className="text-gray-600">
-                Comunidad de abogados y profesionales especializados en contrataciones públicas. 
+                Comunidad de abogados y profesionales especializados en contrataciones públicas.
                 Comparte dudas, casos y mejores prácticas.
               </p>
             </div>
-            
+
             <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-2xl">
               <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -101,7 +101,7 @@ export default function Home() {
               </div>
               <h4 className="text-xl font-semibold text-gray-900 mb-4">Consultas Gratuitas</h4>
               <p className="text-gray-600">
-                Obtén respuestas directas de expertos a través de WhatsApp. 
+                Obtén respuestas directas de expertos a través de WhatsApp.
                 Consultas gratuitas para resolver tus dudas legales específicas.
               </p>
             </div>
@@ -136,15 +136,15 @@ export default function Home() {
                       <p className="text-gray-600">contacto@romanocc.com</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <Phone className="w-6 h-6 text-orange-600 mt-1 mr-4" />
                     <div>
                       <h5 className="font-semibold text-gray-900">Teléfono</h5>
-                      <p className="text-gray-600">+52 55 1234 5678</p>
+                      <p className="text-gray-600">+51 929388787</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <MapPin className="w-6 h-6 text-orange-600 mt-1 mr-4" />
                     <div>
@@ -152,7 +152,7 @@ export default function Home() {
                       <p className="text-gray-600">Ciudad de México, México</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <Clock className="w-6 h-6 text-orange-600 mt-1 mr-4" />
                     <div>
@@ -206,7 +206,7 @@ export default function Home() {
               <h5 className="text-lg font-semibold mb-4">Contacto</h5>
               <ul className="space-y-2 text-gray-400">
                 <li>contacto@romanocc.com</li>
-                <li>+52 55 1234 5678</li>
+                <li>+51 929388787</li>
                 <li>Ciudad de México, México</li>
               </ul>
             </div>

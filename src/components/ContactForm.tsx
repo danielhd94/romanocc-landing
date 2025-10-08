@@ -91,7 +91,7 @@ export default function ContactForm() {
                         {...register('name')}
                         type="text"
                         id="name"
-                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors ${errors.name ? 'border-red-500' : 'border-gray-300'
+                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors placeholder-gray-500 ${errors.name ? 'border-red-500' : 'border-gray-300'
                             }`}
                         placeholder="Tu nombre completo"
                     />
@@ -110,7 +110,7 @@ export default function ContactForm() {
                         {...register('email')}
                         type="email"
                         id="email"
-                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors ${errors.email ? 'border-red-500' : 'border-gray-300'
+                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors placeholder-gray-500 ${errors.email ? 'border-red-500' : 'border-gray-300'
                             }`}
                         placeholder="tu@email.com"
                     />
@@ -129,8 +129,8 @@ export default function ContactForm() {
                         {...register('phone')}
                         type="tel"
                         id="phone"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
-                        placeholder="+52 55 1234 5678"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors placeholder-gray-500"
+                        placeholder="+51 929388787"
                     />
                 </div>
 
@@ -143,7 +143,7 @@ export default function ContactForm() {
                         {...register('subject')}
                         type="text"
                         id="subject"
-                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors ${errors.subject ? 'border-red-500' : 'border-gray-300'
+                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors placeholder-gray-500 ${errors.subject ? 'border-red-500' : 'border-gray-300'
                             }`}
                         placeholder="¿En qué podemos ayudarte?"
                     />
@@ -162,7 +162,7 @@ export default function ContactForm() {
                         {...register('message')}
                         id="message"
                         rows={5}
-                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors resize-none ${errors.message ? 'border-red-500' : 'border-gray-300'
+                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors resize-none placeholder-gray-500 ${errors.message ? 'border-red-500' : 'border-gray-300'
                             }`}
                         placeholder="Cuéntanos más detalles sobre tu consulta..."
                     />
@@ -174,10 +174,10 @@ export default function ContactForm() {
                 {/* Estado del formulario */}
                 {formStatus.type !== 'idle' && (
                     <div className={`p-4 rounded-lg flex items-center ${formStatus.type === 'success'
-                            ? 'bg-green-50 text-green-800 border border-green-200'
-                            : formStatus.type === 'error'
-                                ? 'bg-red-50 text-red-800 border border-red-200'
-                                : 'bg-orange-50 text-orange-800 border border-orange-200'
+                        ? 'bg-green-50 text-green-800 border border-green-200'
+                        : formStatus.type === 'error'
+                            ? 'bg-red-50 text-red-800 border border-red-200'
+                            : 'bg-orange-50 text-orange-800 border border-orange-200'
                         }`}>
                         {formStatus.type === 'success' && <CheckCircle className="w-5 h-5 mr-2" />}
                         {formStatus.type === 'error' && <AlertCircle className="w-5 h-5 mr-2" />}

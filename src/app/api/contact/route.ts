@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     const validatedData = contactSchema.parse(body);
 
     // Configurar el transporter de nodemailer
-    const transporter = nodemailer.createTransporter({
+    const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: parseInt(process.env.SMTP_PORT || "587"),
       secure: false, // true para 465, false para otros puertos
@@ -109,7 +109,7 @@ export async function POST(request: NextRequest) {
         {
           success: false,
           message: "Datos del formulario inválidos",
-          errors: error.errors,
+          errors: error.issues,
         },
         { status: 400 }
       );
